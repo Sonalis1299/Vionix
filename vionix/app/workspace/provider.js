@@ -1,9 +1,11 @@
 "use client"
-import { api } from '../../convex/_generated/api';
+import { api } from '@/convex/_generated/api';
 import { useUser } from '@clerk/nextjs';
 import { useMutation } from 'convex/react';
 import React, { useEffect, useState } from 'react';
-import { UserDetailContext } from '../../context/UserDetailContext';
+import { UserDetailContext } from '@/context/UserDetailContext';
+import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar';
+import AppSidebar from '@/app/workspace/_components/AppSidebar';
 
 function WorkspaceProvider({ children }) {
 
@@ -26,9 +28,12 @@ function WorkspaceProvider({ children }) {
     }
   return (
     <UserDetailContext.Provider value={{userDetail, setUserDetail}}>
+      <SidebarProvider>
+        <AppSidebar/>
     <div>
-      {children}
-    </div>
+      <SidebarTrigger/>
+      {children}</div>
+    </SidebarProvider>
     </UserDetailContext.Provider>
   );
 }
