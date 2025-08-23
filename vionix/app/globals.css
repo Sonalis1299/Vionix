@@ -16,7 +16,7 @@
   }
 
   .dark {
-    --sidebar: oklch(0.205 0 0);
+    --sidebar: oklch(20.463% 0.00002 271.152);
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
     --sidebar-primary-foreground: 0 0% 100%;
@@ -43,9 +43,9 @@
 
     --popover-foreground: 240 10% 3.9%;
 
-    --primary: 240 5.9% 10%;
+    --primary: 220 80% 55%;
 
-    --primary-foreground: 0 0% 98%;
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 240 4.8% 95.9%;
 
@@ -111,9 +111,9 @@
 
     --popover-foreground: 0 0% 98%;
 
-    --primary: 0 0% 98%;
+    --primary: 220 70% 60%;
 
-    --primary-foreground: 240 5.9% 10%;
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 240 3.7% 15.9%;
 

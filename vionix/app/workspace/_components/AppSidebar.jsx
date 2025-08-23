@@ -27,9 +27,9 @@ const MenuOptions = [
     path: "/workspace",
   },
   {
-    title: "Create Short Video",
+    title: "Create",
     icon: Video,
-    path: "/workspace/projects",
+    path: "/workspace/create-video",
   },
   {
     title: "My Videos",
@@ -68,7 +68,7 @@ function AppSidebar() {
               {MenuOptions.map((menu,index)=>(
                 <SidebarMenuItem key={index}>
                   <SidebarMenuButton asChild className={'p-5'}>
-                     <a href={menu.title} className={`text-[17px] ${path === menu.path&& 'text-primary bg-purple-100'}`}>
+                     <a href={menu.path} className={`text-[17px] ${path === menu.path&& 'text-primary bg-blue-100'}`}>
                       <menu.icon className="h-10 w-10"/>
                       <span>{menu.title}</span>
                      </a>
