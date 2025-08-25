@@ -11,7 +11,7 @@ function CreateVideos() {
   return (
     <div className="mt-32 flex flex-col items-center justify-center w-full ">
       <div>
-        <Image src={"/a.png"} alt="icon" width={150} height={150} />
+        <Image src={"/a.png"} alt="icon" width={100} height={100} />
       </div>
       <h2 className="font-bold text-2xl text-center">
         📽️ Create AI Short Videos in Just One Click!
